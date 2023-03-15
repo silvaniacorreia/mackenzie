@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Silvania Goularte Correia">
+        <link rel="stylesheet" type="text/css" href="carreiraTI.css">
+        <link href='https://fonts.googleapis.com/css?family=Spline Sans Mono' rel='stylesheet'>
+    </head>
+    <body>
+        <table class="upper">
+            <tbody>          
+                <tr> 
+                    <td class="head">
+                        <header>
+                            <h1><a href="index.html">Carreira em <img class="icon" src="ti.png" alt="TI"></a></h1>
+                        </header>
+                    </td>
+                    <td>
+                        <nav>
+                            <td class="nav1">
+                                <a href="index.html" class="menu">Home</a>
+                            </td>
+                            <td class="nav2">
+                                <a href="areas.html" class="menu">Áreas promissoras</a>
+                            </td>
+                            <td class="last_nav">
+                                <a href="contato.html" class="menu">Fale conosco</a>
+                            </td>
+                        </nav>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#" method="post">
+        <table class="form">
+            <thead>
+                <tr>                    
+                    <td colspan="2"><h2>Entre em contato com nossa equipe</h2></td>                    
+                </tr>
+            </thead>
+            <tbody>                    
+                <tr>                
+                    <td colspan="2">
+                        <label for="name">Nome </label><input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="email">E-mail </label><input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Trabalha em TI? </label>
+                        <input type="radio" id="sim" name="ti" value="sim"><label for="sim">Sim</label>                        
+                        <input type="radio" id="nao" name="ti" value="nao"><label for="nao">Não</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 
+                        <label for="area">Se sim, em qual área?</label> 
+                        <select name="area" id="area">
+                            <option value="">Selecione</option>
+                            <option value="backend">Back-End</option>
+                            <option value="frontend">Front-End</option>
+                            <option value="fullstack">Full Stack</option>
+                            <option value="dados">Ciência de Dados</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="nota">De 1 a 10, qual sua nota para o conteúdo do site?</label>
+                        <input type="number" name="nota" id="nota" min="0" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <label for="mensagem">Sua mensagem</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="2" class="center">
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Dúvidas, críticas ou sugestões."></textarea>
+                    </td>
+                </tr>                    
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="center">
+                        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+                    </td>                        
+                </tr>
+            </tfoot>                   
+        </table>
+        </form>
+    </body>
+</html>
