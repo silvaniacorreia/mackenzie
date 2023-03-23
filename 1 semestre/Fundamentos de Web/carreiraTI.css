@@ -1,18 +1,24 @@
 body { 
     background-image: url("backgroundTI.jpg");
+    background-attachment: fixed;
     background-size: 100%;
-    font-family: Verdana, sans-serif;
+    font-family: 'Inter',sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    color: white;
+    
 }
 
 p > a {
-    color:black;
+    color:rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-header {
-    
+p {
+    letter-spacing: 1px
+}
+
+header {    
     align-items: center;    
 }
 
@@ -24,12 +30,16 @@ img.icon {
 
 div.text {
     text-align: left;
-    background: rgba(203, 214, 203, 0.596);
+    background: rgba(0, 0, 0, 0.596);
     padding: 10px;
-    margin-top: 80px;
-    margin-left: 50px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
     width: 600px;
     border-radius: 10px;
+    border: rgb(34,141,255);
+    border-style: solid;
+    border-width: 0.03em;
 }
 
 td.nav1 {
@@ -58,36 +68,29 @@ td.head {
     padding-left: 25px;
 }
 
-table.upper {
-    background-color: rgb(241, 235, 235);
+table.upper {    
     margin: -10px;
     padding: 5px;
 }
 
-video {
-    position: absolute;    
-    top: 200px;
-    right: 30px;    
-}
-
 a.menu:link {
-    color:rgb(109, 103, 103);
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a.menu:visited {
-    color:rgb(109, 103, 103);
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a.menu:hover {
-    color:black;
-    text-decoration: underline;        
+    color:rgb(34,141,255);
+    text-decoration: none;        
 }
 
 a.menu:active {
-    color:black;
-    text-decoration: underline;   
+    color:rgb(34,141,255);
+    text-decoration: none;   
 }
 
 h1 {
@@ -95,44 +98,59 @@ h1 {
 }
 
 h1 > a {
-    color:black;
+    color:hwb(0 97% 3% / 0.993);
     text-decoration: none;
 }
 
 h2 {
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
 }
 
-img.img_right {
-    position: absolute;    
-    top: 220px;
-    right: 30px;  
+img.img_right {  
     border-radius: 10px;  
 }
 
 table.form {
-    background: rgba(203, 214, 203);
+    position: absolute;
+    top: 150px;
+    left: 30%;    
+    background: rgba(0, 0, 0, 0.596);
     border-radius: 10px;
     padding: 10px;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 14px;
+    border: rgb(34,141,255);
+    border-style: solid;
+    border-width: 0.03em;
+    color: white;
+    letter-spacing: 1px;
 }
 
 input, textarea, select {
     border: none;
-    background-color: rgb(78, 76, 76);
+    background-color: rgb(63, 62, 62);
     color: white;
     border-radius: 7px;
     padding: 4px;
+    border: rgb(34,141,255);
+    border-style: solid;
+    border-width: 0.03em;
+}
+
+input[type=text], input[type=email] {
+    width: 72%;
+}
+
+textarea {
+    width: 80%;
 }
 
 input[type=submit], input[type=reset] {
     background-color: rgb(78, 76, 76);
-    border: none;
+    border: rgb(34,141,255);
+    border-style: solid;
+    border-width: 0.03em;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
@@ -140,9 +158,23 @@ input[type=submit], input[type=reset] {
     cursor: pointer;
 }
     
-td.center {
-    text-align: center;
+td.left {
+    text-align: left;
 }
 
+div.position_object {
+    position: relative;    
+    top: 60px;
+    left: 670px;
+}
 
-  
+video {
+    border-radius: 10px;
+    position: relative;    
+    top: 65px;
+    left: 750px;
+}
+
+li {
+    letter-spacing: 1px;
+}
