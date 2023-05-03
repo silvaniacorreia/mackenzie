@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Times preferidos</title>
+            <script>
+                const times = [
+                    {modalidade:"Basquete", nome:"Lakers", qtdeJogadores: 6, cor: "Dourado"},
+                    {modalidade:"Futebol", nome:"São Paulo", qtdeJogadores: 12, cor: "Vermelho"},
+                    {modalidade:"Vôlei", nome:"Nestlê", qtdeJogadores: 6, cor: "Azul"}                
+                ];    
+            </script>
+            <style>        
+                span.negrito {
+                  font-weight: bold;
+                }            
+                </style>
+        <body>
+            <h1>Times preferidos</h1>
+            <script>
+                document.write("<h2>Array de times</h2>");
+                document.write("<ul>");
+                for (var i = 0; i < times.length; i++) {
+                    document.write("<li>");
+                    document.write("<span class='negrito'>Modalidade: </span>" + times[i].modalidade + "<br>");
+                    document.write("<span class='negrito'>Time: </span>" + times[i].nome + "<br>");
+                    document.write("<span class='negrito'>Jogadores: </span>" + times[i].qtdeJogadores + "<br>");
+                    document.write("<span class='negrito'>Cor: </span>"+ times[i].cor + "<br>");
+                    document.write("</li><br>")
+                }
+                document.write("</ul>");  
+            </script>
+            <label for="cor">Escolha uma cor:</label>
+            <select id="cores" onchange="mostrarTimeSelecionado()">
+                <option value="nenhuma">Selecione</option>
+                <option value="dourado">Dourado</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+            </select>
+            <div id="timeSelecionado"></div>
+            <script>
+                function mostrarTimeSelecionado() {
+                    const select = document.getElementById("cores");
+                    const timeSelecionado = select.options[select.selectedIndex].value; 
+                    const div = document.getElementById("timeSelecionado");               
+                    if (timeSelecionado === "dourado") {
+                        div.innerHTML = "<br><span class='negrito'>Modalidade: </span>" + times[0].modalidade + "<br>" +
+                                        "<span class='negrito'>Time: </span>" + times[0].nome + "<br>" +
+                                        "<span class='negrito'>Jogadores: </span>" + times[0].qtdeJogadores + "<br>" +
+                                        "<span class='negrito'>Cor: </span>"+ times[0].cor + "<br>" +
+                                        "<img src='lakers.png'>";
+                    } else if (timeSelecionado === "vermelho") {
+                        div.innerHTML = "<br><span class='negrito'>Modalidade: </span>" + times[1].modalidade + "<br>" +
+                                        "<span class='negrito'>Time: </span>" + times[1].nome + "<br>" +
+                                        "<span class='negrito'>Jogadores: </span>" + times[1].qtdeJogadores + "<br>" +
+                                        "<span class='negrito'>Cor: </span>"+ times[1].cor + "<br>" +
+                                        "<img src='saopaulo.png'>";
+                    } else if (timeSelecionado === "azul") {
+                        div.innerHTML = "<br><span class='negrito'>Modalidade: </span>" + times[2].modalidade + "<br>" +
+                                        "<span class='negrito'>Time: </span>" + times[2].nome + "<br>" +
+                                        "<span class='negrito'>Jogadores: </span>" + times[2].qtdeJogadores + "<br>" +
+                                        "<span class='negrito'>Cor: </span>"+ times[2].cor + "<br>" +
+                                        "<img src='nestle.png'>";
+                    } else {
+                        div.innerHTML = "<br><span class='negrito'>Escolha uma cor!</span>"
+                    }
+                }
+            </script>
+        </body>
+    </html>

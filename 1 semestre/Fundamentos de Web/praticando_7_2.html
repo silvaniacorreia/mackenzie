@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html>
+    <!--2.    Faça um script em que o usuário entre com quatro notas, em uma caixa de diálogo. 
+    Em seguida, crie uma lista e exiba as notas também com caixa de diálogo. Calcule a média e exiba na página. -->
+        <head>
+            <meta charset="utf-8">
+            <title>Sua média</title>
+            <script>
+                function mediaNotas(array) {
+                    let soma = 0;
+                    for (let j = 0; j < array.length; j++) {
+                        soma += array[j];
+                    }
+                    let media = soma / array.length;
+                    return media;
+                }        
+            </script>
+    </head>
+    <body>
+        <h1>Minha média</h1>
+        <script>
+            let notas = [];
+                for (let i = 0; i < 4; i++) {
+                    notas[i] = parseFloat(prompt("Insira a nota " + (i+1)));
+                }
+            alert("Notas: " + notas.join(", "));
+            document.write('Média: ', mediaNotas(notas));            
+        </script>
+    </body>
+    </html>
