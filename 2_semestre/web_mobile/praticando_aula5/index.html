@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Superhero Battle</title>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card" id="hero1">
+            <h2>Nome do Herói 1</h2>
+            <img src="url_da_imagem_heroi_1" alt="Nome do Herói 1">
+            <h3>Powerstats</h3>
+            <ul>
+                <li>
+                    <span>Força:</span>
+                    <div class="bar strength" style="--strength: 80%;"></div>
+                </li>
+                <li>
+                    <span>Velocidade:</span>
+                    <div class="bar speed" style="--speed: 65%;"></div>
+                </li>
+                <li>
+                    <span>Durabilidade:</span>
+                    <div class="bar durability" style="--durability: 75%;"></div>
+                </li>
+            </ul>
+            <p>Nome Completo: Nome Completo do Herói 1</p>
+        </div>
+        
+        <div class="card" id="hero2">
+            <h2>Nome do Herói 2</h2>
+            <img src="url_da_imagem_heroi_2" alt="Nome do Herói 2">
+            <h3>Powerstats</h3>
+            <ul>
+                <li>
+                    <span>Força:</span>
+                    <div class="bar strength" style="--strength: 75%;"></div>
+                </li>
+                <li>
+                    <span>Velocidade:</span>
+                    <div class="bar speed" style="--speed: 90%;"></div>
+                </li>
+                <li>
+                    <span>Durabilidade:</span>
+                    <div class="bar durability" style="--durability: 60%;"></div>
+                </li>
+            </ul>
+            <p>Nome Completo: Nome Completo do Herói 2</p>
+        </div>
+    </div>
+
+    <button id="compareButton">Jogar Cartas</button>
+    <h2 id="result"></h2>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
